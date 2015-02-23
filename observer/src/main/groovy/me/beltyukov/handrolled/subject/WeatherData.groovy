@@ -2,9 +2,6 @@ package me.beltyukov.handrolled.subject
 
 import me.beltyukov.handrolled.observer.Observer
 
-/**
- * Created by Alex on 12/13/14.
- */
 class WeatherData implements Subject {
 
     private List observers = []

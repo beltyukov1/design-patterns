@@ -1,0 +1,27 @@
+package me.beltyukov.factory
+
+class SimplePizzaFactory {
+
+    Pizza createPizza(String type) {
+        def pizza = null
+
+        switch (type) {
+            case 'cheese':
+                pizza = new CheesePizza()
+                break
+            case 'pepperoni':
+                pizza = new PepperoniPizza()
+                break
+            case 'clam':
+                pizza = new ClamPizza()
+                break
+            case 'veggie':
+                pizza = new VeggiePizza()
+                break
+            default:
+                break
+        }
+
+        pizza
+    }
+}
